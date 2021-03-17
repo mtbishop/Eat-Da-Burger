@@ -21,12 +21,12 @@ const objToSql = (ob) => {
     let value = ob[key];
     // Check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
-      // If string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
+      // If string with spaces, add quotations (Cheese Burger => 'Cheese Burger')
       if (typeof value === 'string' && value.indexOf(' ') >= 0) {
         value = `'${value}'`;
       }
-      // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {sleepy: true} => ["sleepy=true"]
+      // e.g. {burger_name: 'Cheese Burger'} => ["burger_name='Cheese Burger'"]
+      // e.g. {devoured: true} => ["devoured=true"]
       arr.push(`${key}=${value}`);
     }
   }
@@ -66,7 +66,7 @@ const orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, sleepy: true}
+  // An example of objColVals would be {burger_name: panther, devoured: true}
   update(table, objColVals, condition, cb) {
     let queryString = `UPDATE ${table}`;
 
@@ -99,5 +99,5 @@ const orm = {
   },
 };
 
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model (burger.js).
 module.exports = orm;
