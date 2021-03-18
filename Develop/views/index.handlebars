@@ -1,16 +1,13 @@
-<div class="flex justify-center text-8xl p-3">
-  <div class="bg-white rounded-full text-red-700 p-4 bg-gray-200 border-4 border-red-700">
-    <div class="fas fa-hamburger p-1"></div>
-    <div class="fas fa-hamburger p-1"></div>
-    <div class="fas fa-hamburger p-1"></div>
-    <h1 class="text-5xl text-center p-3 text-red-700">Burger Log</h1>
+<div>
+  <div>
+    <h1>Burger Log</h1>
   </div>
 </div>
 
-<div class="grid grid-cols-12 gap-4 p-3">
-  <div class="col-start-4 col-span-3 rounded-lg bg-blue-900 text-white p-3">
-    <h2 class="text-center text-2xl">Burgers to be devoured:</h2>
-    <ol class="list-decimal p-3 text-xl">
+<div>
+  <div>
+    <h2>Burgers ready to be eaten:</h2>
+    <ol>
       {{#each burgers}}
       {{#unless devoured}}
       {{> burgers/burger-block devoured=true}}
@@ -19,9 +16,9 @@
     </ol>
   </div>
 
-  <div class="col-span-3 rounded-lg bg-blue-900 text-white p-3">
-    <h2 class="text-center text-2xl">Burgers already devoured:</h2>
-    <ol class="list-decimal p-3 text-xl">
+  <div>
+    <h2>Burgers eaten:</h2>
+    <ol>
       {{#each burgers}}
       {{#if devoured}}
       {{> burgers/burger-block devoured=false}}
@@ -31,13 +28,12 @@
   </div>
 </div>
 
-<div class="flex justify-center content-center">
+<div>
   <div>
-    <form id="create-form" class="bg-red-700 p-4 rounded-lg">
-      <p class="text-center text-white text-2xl pb-2">Add a new Burger!</p>
-      <input class="border-2 p-3" type="text" id="newburger" name="burger">
-      <button id="submit" type="submit"
-        class="bg-blue-900 hover:bg-white border-2 border-blue-900 font-medium text-white hover:text-blue-900  text-xl p-2 rounded-full fas fa-plus"></button>
+    <form id="create-form">
+      <p>Add a new Burger!</p>
+      <input type="text" id="newburger" name="burger">
+      <button id="submit" type="submit">Add Burger</button>
     </form>
   </div>
 </div>
