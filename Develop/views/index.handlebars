@@ -1,39 +1,52 @@
-<div>
-  <div>
-    <h1>Burger Log</h1>
+<div class="row" id="headerTitle">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
+    <h1 id="appTitle">Eat Da Burger</h1>
+  </div>
+  <div class="col-lg-3"></div>
+</div>
+
+
+<div class="container" id="tableBodies">
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6" id="uneatenTable">
+      <h2>Burgers ready to be eaten:</h2>
+      <ol id="uneatenOl">
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+        {{/each}}
+      </ol>
+    </div>
+    <div class="col-lg-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6" id="eatenTable">
+      <h2>Burgers eaten:</h2>
+      <ol id="eatenOl">
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devoured=false}}
+        {{/if}}
+        {{/each}}
+      </ol>
+    </div>
+    <div class="col-lg-3"></div>
   </div>
 </div>
 
-<div>
-  <div>
-    <h2>Burgers ready to be eaten:</h2>
-    <ol>
-      {{#each burgers}}
-      {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-      {{/unless}}
-      {{/each}}
-    </ol>
-  </div>
-
-  <div>
-    <h2>Burgers eaten:</h2>
-    <ol>
-      {{#each burgers}}
-      {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-      {{/if}}
-      {{/each}}
-    </ol>
-  </div>
-</div>
-
-<div>
-  <div>
+<div class="row">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
     <form id="create-form">
       <p>Add a new Burger!</p>
-      <input type="text" id="newburger" name="burger">
-      <button id="submit" type="submit">Add Burger</button>
+      <input type="text" class="form-control" placeholder="Burger" id="newburger" name="burger">
+      <button id="submit" class="btn btn-warning mt-1" type="submit">Add Burger</button>
     </form>
   </div>
+  <div class="col-lg-3"></div>
 </div>

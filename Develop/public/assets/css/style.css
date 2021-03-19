@@ -1,5 +1,8 @@
 body {
-  background: #eeeeee;
+  background: #196400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 li {
@@ -9,4 +12,8 @@ li {
 
 input {
   width: 20rem;
+}
+
+#appTitle {
+  font-family: 'Chango', cursive;
 }
