@@ -11,7 +11,7 @@
   <div class="row">
     <div class="col-lg-3"></div>
     <div class="col-lg-6" id="uneatenTable">
-      <h2>Burgers ready to be eaten:</h2>
+      <h2 class="burgerTitles">Burgers ready to be eaten:</h2>
       <ol id="uneatenOl">
         {{#each burgers}}
         {{#unless devoured}}
@@ -26,7 +26,7 @@
   <div class="row">
     <div class="col-lg-3"></div>
     <div class="col-lg-6" id="eatenTable">
-      <h2>Burgers eaten:</h2>
+      <h2 class="burgerTitles">Burgers eaten:</h2>
       <ol id="eatenOl">
         {{#each burgers}}
         {{#if devoured}}
@@ -43,7 +43,7 @@
   <div class="col-lg-3"></div>
   <div class="col-lg-6">
     <form id="create-form">
-      <p>Add a new Burger!</p>
+      <p style="color: orange">Add a new Burger!</p>
       <input type="text" class="form-control" placeholder="Burger" id="newburger" name="burger">
       <button id="submit" class="btn btn-warning mt-1" type="submit">Add Burger</button>
     </form>

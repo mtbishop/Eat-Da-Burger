@@ -17,3 +17,17 @@ input {
 #appTitle {
   font-family: 'Chango', cursive;
 }
+
+.burgerTitles {
+  font-family: 'Ranchers', cursive;
+}
+
+#eatenOl {
+  color: orange;
+  font-family: 'Rubik', sans-serif;
+}
+
+#uneatenOl {
+  color: orange;
+  font-family: 'Rubik', sans-serif;
+}
