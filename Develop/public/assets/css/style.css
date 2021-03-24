@@ -1,5 +1,5 @@
 body {
-  background: #196400;
+  background: #1b6b00;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +16,9 @@ input {
 
 #appTitle {
   font-family: 'Chango', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .burgerTitles {
@@ -30,4 +33,39 @@ input {
 #uneatenOl {
   color: orange;
   font-family: 'Rubik', sans-serif;
+}
+
+#deleteButton {
+  border: 2px solid black;
+  padding: 0.2rem;
+}
+
+#eatenTable {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+#uneatenTable {
+  margin-right: 4rem;
+}
+
+#eatenButton {
+  margin-left: 0.7rem;
+}
+
+#burger-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tableBodies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 3.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

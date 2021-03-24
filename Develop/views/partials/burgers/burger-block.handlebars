@@ -2,7 +2,7 @@
 	{{burger}}
 
 	{{#if devoured}}
-	<button class="change-devoured btn btn-primary" data-id="{{id}}" data-newdevoured="{{devoured}}">Eaten</button>{{/if}}
+	<button type="button" id="eatenButton" class="change-devoured btn btn-outline-warning" data-id="{{id}}" data-newdevoured="{{devoured}}">Eaten</button>{{/if}}
 
-	<button class="delete-burger btn btn-danger" data-id="{{this.id}}">Delete</button>
+	<button type="button" id="deleteButton" class="delete-burger btn close" data-id="{{this.id}}">x</button>
 </li>
