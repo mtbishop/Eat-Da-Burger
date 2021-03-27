@@ -1,8 +1,10 @@
 body {
-  background: #1b6b00;
+  background: url(https://www.singleplatform.com/wp-content/uploads/2018/12/SinglePlatform-Customer-Brooks-Burgers-Honored-on-TripAdvisor_s-List-of-Top-10-Burgers-in-America.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 li {
@@ -19,10 +21,12 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .burgerTitles {
   font-family: 'Ranchers', cursive;
+  color: white;
 }
 
 #eatenOl {
@@ -57,6 +61,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 #tableBodies {
@@ -68,4 +73,21 @@ input {
   padding: 3.7rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  background-color: rgb(118, 19, 19);
+  opacity: 90%;
+}
+
+#submit {
+  font-size: 18px;
+  padding: 0.1rem 1.8rem 0.1rem 1.8rem;
+  margin-bottom: 3px;
+  margin-top: -3px;
+  margin-right: 2px;
+  font-family: 'Oswald', sans-serif;
+  border: 1px solid black;
+}
+
+#create-form {
+  display: flex;
+  flex-direction: row;
 }
