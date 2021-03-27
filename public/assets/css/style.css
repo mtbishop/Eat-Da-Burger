@@ -84,7 +84,7 @@ input {
   margin-top: -3px;
   margin-right: 2px;
   font-family: 'Oswald', sans-serif;
-  border: 1px solid black;
+  border: 0.1rem solid black;
 }
 
 #create-form {
