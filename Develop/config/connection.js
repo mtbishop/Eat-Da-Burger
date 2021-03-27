@@ -1,6 +1,5 @@
 // Set up MySQL connection.
 const mysql = require('mysql');
-var connection;
 
 const connection = mysql.createConnection({
   host: 'localhost',
