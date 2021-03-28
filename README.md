@@ -2,6 +2,8 @@
 
   # Eat Da Burger
 
+  ![demo-image](https://github.com/mtbishop/Eat-The-Burger/blob/main/public/assets/img/demo-image.PNG)
+
   ## Description
 
   A to-do for burgers you would like to try out and see which ones you have already eaten.
